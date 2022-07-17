@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-3.1.0.min.js">
+</script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $("#btn1").click(function(){
+
+    $("#test1").text("Good Morning!");
+  });
+  $("#btn2").click(function(){
+    $("#test2").html("<b>Good Morning!</b>");
+  });
+  $("#btn3").click(function(){
+    $("#test3").val("Lion King");
+  });
+});
+</script>
+</head>
+<body>
+
+<body style="background-color:powderblue;">
+
+<p id="test1">This is a paragraph.</p>
+The Lion King is een musical gebaseerd op de tekenfilm The Lion King uit 1994. De musical is geregisseerd door Julie Taymor, met in de hoofdrollen acteurs (gehuld in dierenkostuums), en grote marionettenpoppen.
+
+
+<p id="test2">This is another paragraph.</p>
+Tom en Jerry is een Amerikaanse tekenfilmreeks over een kat en een muis. De show werd oorspronkelijk geproduceerd door Metro-Goldwyn-Mayer en is bedacht door William Hanna en Joseph Barbera. Sinds 1993 wordt de productie verricht door Warner Brothers. De reeks is een van de populairste animatiereeksen ter wereld. Wikipedia
+
+<p>Input field: <input type="text" id="test3" value="Tom and Jerry"></p>
+
+<button id="btn1">Set Text</button>
+<button id="btn2">Set HTML</button>
+<button id="btn3">Set Value</button>
+
+</body>
+</html>
